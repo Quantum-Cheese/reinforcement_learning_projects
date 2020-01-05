@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c857265-4585-4d28-b6c4-603946da32c2" name="Default Changelist" comment="" />
+    <list default="true" id="0c857265-4585-4d28-b6c4-603946da32c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CartPole/Hill_Climbing/agent_HC.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CartPole/Hill_Climbing/main_hillClimb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNN_pytorch/MNIST_data/MNIST/raw/t10k-images-idx3-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNN_pytorch/MNIST_data/MNIST/raw/t10k-images-idx3-ubyte.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNN_pytorch/MNIST_data/MNIST/raw/train-images-idx3-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNN_pytorch/MNIST_data/MNIST/raw/train-images-idx3-ubyte.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNN_pytorch/MNIST_data/MNIST/raw/train-labels-idx1-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNN_pytorch/MNIST_data/MNIST/raw/train-labels-idx1-ubyte.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNN_pytorch/model_mlp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNN_pytorch/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNN_pytorch/toy_example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/Deep_Q_Network.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/checkpoint.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/ddqn_v1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/ddqn_v2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/ddqn_v3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/dqn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/dueling_model.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/images/Total Average reward scores plot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/images/ddqn_agent_scores.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/images/ddqn_testing_scores.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/images/double_dqn_v1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/images/dueling-ddqn_testing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/images/dueling-ddqn_training.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/images/runningResult.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/images/runningResult_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/model_dueling.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/old_agent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/org_dqn.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/play_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/ref_ddqn_iws.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/test.py" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,67 +47,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pro_LunarLander/dqn.py">
+        <entry file="file://$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/env_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+            <state>
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pro_LunarLander/ddqn_v2.py">
+        <entry file="file://$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="76">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
-                <element signature="e#44#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pro_LunarLander/ddqn_v1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3116">
-              <caret line="172" column="31" selection-start-line="22" selection-end-line="172" selection-end-column="31" />
-              <folding>
-                <element signature="e#35#53#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Pro_LunarLander/model_dueling.py">
+        <entry file="file://$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pro_LunarLander/ddqn_v3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pro_LunarLander/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1482">
-              <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
+            <state relative-caret-position="416">
+              <caret line="76" column="23" lean-forward="true" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -94,8 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Pro_BlackJack/test.py" />
-        <option value="$PROJECT_DIR$/Pro_BlackJack/main.py" />
         <option value="$PROJECT_DIR$/Pro_Taxi-v2(old)/Pro_Taxi-v2/main.py" />
         <option value="$PROJECT_DIR$/Pro_Taxiv2/agent.py" />
         <option value="$PROJECT_DIR$/Pro_Taxiv2/monitor.py" />
@@ -133,14 +133,28 @@
         <option value="$PROJECT_DIR$/Pro_LunarLander/ddqn_v3.py" />
         <option value="$PROJECT_DIR$/Pro_LunarLander/main.py" />
         <option value="$PROJECT_DIR$/Pro_LunarLander/model_dueling.py" />
+        <option value="$PROJECT_DIR$/CartPole/Hill_Climbing/恶女、.py" />
+        <option value="$PROJECT_DIR$/CartPole/Hill_Climbing/main_HC.py" />
+        <option value="$PROJECT_DIR$/LunarLander/DQN/main.py" />
+        <option value="$PROJECT_DIR$/LunarLander/DQN/ddqn_v3.py" />
+        <option value="$PROJECT_DIR$/LunarLander/DQN/play_env.py" />
+        <option value="$PROJECT_DIR$/LunarLander/DQN/dqn.py" />
+        <option value="$PROJECT_DIR$/CartPole/Hill_Climbing/envTest.py" />
+        <option value="$PROJECT_DIR$/CartPole/Hill_Climbing/agent_HC.py" />
+        <option value="$PROJECT_DIR$/CartPole/Hill_Climbing/main_hillClimb.py" />
+        <option value="$PROJECT_DIR$/MountCar_continuous/env_test.py" />
+        <option value="$PROJECT_DIR$/MountCar_continuous/main.py" />
+        <option value="$PROJECT_DIR$/MountCar_continuous/agent.py" />
+        <option value="$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/agent.py" />
+        <option value="$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/main.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="256" />
-    <option name="y" value="55" />
-    <option name="width" value="1454" />
-    <option name="height" value="834" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-1464" />
+    <option name="y" value="328" />
+    <option name="width" value="1164" />
+    <option name="height" value="662" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -148,6 +162,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,13 +173,18 @@
             <path>
               <item name="RL_workspace" type="b2602c69:ProjectViewProjectNode" />
               <item name="RL_workspace" type="462c0819:PsiDirectoryNode" />
-              <item name="Pro_LunarLander" type="462c0819:PsiDirectoryNode" />
+              <item name="CartPole" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RL_workspace" type="b2602c69:ProjectViewProjectNode" />
               <item name="RL_workspace" type="462c0819:PsiDirectoryNode" />
-              <item name="Pro_LunarLander" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="MountCar_continuous" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RL_workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RL_workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="MountCar_continuous" type="462c0819:PsiDirectoryNode" />
+              <item name="cross_entropy_method" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RL_workspace" type="b2602c69:ProjectViewProjectNode" />
@@ -175,12 +195,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../#工作文件/#重庆市场监管数据挖掘分析/data_process" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -200,8 +219,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="dqn_agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.env_test">
+    <configuration name="envTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RL_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -209,11 +228,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pro_LunarLander" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CartPole/Hill_Climbing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\RL_workspace\Pro_LunarLander\old_agent.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CartPole/Hill_Climbing/envTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="env_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RL_workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MountCar_continuous" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MountCar_continuous/env_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -243,7 +283,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="play_env" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main_hillClimb" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RL_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -251,11 +291,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pro_LunarLander" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CartPole/Hill_Climbing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pro_LunarLander/play_env.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CartPole/Hill_Climbing/main_hillClimb.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -264,7 +304,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="play_env (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RL_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -272,32 +312,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pro_LunarLander" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LunarLander/DQN" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pro_LunarLander/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="toy_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="RL_workspace" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DNN_pytorch" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DNN_pytorch/toy_example.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LunarLander/DQN/play_env.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -308,11 +327,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.env_test" />
+        <item itemvalue="Python.main_hillClimb" />
+        <item itemvalue="Python.envTest" />
+        <item itemvalue="Python.play_env (1)" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.play_env" />
-        <item itemvalue="Python.dqn_agent" />
-        <item itemvalue="Python.toy_example" />
       </list>
     </recent_temporary>
   </component>
@@ -330,9 +349,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26221928" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21162046" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -348,7 +368,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Run" order="3" weight="0.38069704" />
+      <window_info anchor="right" id="Run" order="3" visible="true" weight="0.2260128" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.124200426" />
@@ -371,107 +391,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DQN-1/play.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pro_BlackJack/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pro_BlackJack/plot_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DQN-1/Memory.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pro_Taxi-v2(old)/Pro_Taxi-v2/monitor_old.py" />
-    <entry file="file://$PROJECT_DIR$/Pro_Taxi-v2(old)/Pro_Taxi-v2/main.py" />
-    <entry file="file://$PROJECT_DIR$/Pro_Taxi-v2(old)/Pro_Taxi-v2/agent_old.py" />
-    <entry file="file://$PROJECT_DIR$/MountCar/visual.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MountCar/discretization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MountCar/envTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1022">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Acrobot/ql_agent.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Acrobot/tile_coding.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Acrobot/envTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding>
-            <element signature="e#26#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Acrobot/visualize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../python36/Lib/site-packages/torch/optim/__init__.pyi">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -481,74 +400,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DNN_pytorch/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pro_LunarLander/play_env.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DNN_pytorch/toy_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DNN_pytorch/model_mlp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DNN_pytorch/test.py" />
+    <entry file="file://$PROJECT_DIR$/DNN_pytorch/toy_example.py" />
+    <entry file="file://$PROJECT_DIR$/DNN_pytorch/model_mlp.py" />
     <entry file="file://$PROJECT_DIR$/Pro_Navigation.py" />
-    <entry file="file://$PROJECT_DIR$/Pro_Navigation/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pro_Navigation/agent_dqn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="91" column="22" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Pro_Navigation/model.py" />
+    <entry file="file://$PROJECT_DIR$/Pro_Navigation/agent_dqn.py" />
     <entry file="file://$PROJECT_DIR$/Pro_LunarLander/old_agent.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="126" column="34" lean-forward="true" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -580,16 +441,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pro_Navigation/main_nav.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Pro_Navigation/main_nav.py" />
     <entry file="file://$PROJECT_DIR$/Pro_LunarLander/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -654,9 +506,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pro_LunarLander/images/TIM截图20191215162403.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Pro_LunarLander/images/TIM截图20191215162403.png" />
     <entry file="file://$PROJECT_DIR$/Pro_LunarLander/images/runningResult.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -673,9 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3513">
           <caret line="188" column="49" selection-start-line="188" selection-start-column="40" selection-end-line="188" selection-end-column="49" />
-          <folding>
-            <element signature="e#91#101#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -683,9 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,7 +538,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Pro_LunarLander/dqn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
+        <state relative-caret-position="446">
           <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -722,6 +566,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Pro_LunarLander/model_dueling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Pro_LunarLander/ddqn_v3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -739,12 +593,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pro_LunarLander/model_dueling.py">
+    <entry file="file://$PROJECT_DIR$/Pro_LunarLander/play_env.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LunarLander/DQN/model_dueling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LunarLander/DQN/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LunarLander/DQN/ddqn_v3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LunarLander/DQN/dqn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LunarLander/DQN/play_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CartPole/Hill_Climbing/main_hillClimb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CartPole/Hill_Climbing/envTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MountCar_continuous/env_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MountCar_continuous/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MountCar_continuous/agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CartPole/Hill_Climbing/agent_HC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/env_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="76" column="23" lean-forward="true" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
