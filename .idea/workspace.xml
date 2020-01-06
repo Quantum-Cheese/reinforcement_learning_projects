@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c857265-4585-4d28-b6c4-603946da32c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CartPole/Hill_Climbing/agent_HC.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CartPole/Hill_Climbing/main_hillClimb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNN_pytorch/MNIST_data/MNIST/raw/t10k-images-idx3-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNN_pytorch/MNIST_data/MNIST/raw/t10k-images-idx3-ubyte.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNN_pytorch/MNIST_data/MNIST/raw/train-images-idx3-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNN_pytorch/MNIST_data/MNIST/raw/train-images-idx3-ubyte.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNN_pytorch/MNIST_data/MNIST/raw/train-labels-idx1-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNN_pytorch/MNIST_data/MNIST/raw/train-labels-idx1-ubyte.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNN_pytorch/model_mlp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNN_pytorch/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNN_pytorch/toy_example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/Deep_Q_Network.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/checkpoint.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/ddqn_v1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/ddqn_v2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/ddqn_v3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/dqn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/dueling_model.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/images/Total Average reward scores plot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/images/ddqn_agent_scores.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/images/ddqn_testing_scores.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/images/double_dqn_v1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/images/dueling-ddqn_testing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/images/dueling-ddqn_training.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/images/runningResult.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/images/runningResult_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/model_dueling.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/old_agent.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/org_dqn.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/play_env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/ref_ddqn_iws.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_LunarLander/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,10 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/env_test.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="362">
+              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -60,22 +27,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="699">
+              <caret line="52" column="26" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="26" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="76" column="23" lean-forward="true" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,10 +106,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-1464" />
-    <option name="y" value="328" />
-    <option name="width" value="1164" />
-    <option name="height" value="662" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -349,10 +304,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21162046" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2660858" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -368,7 +323,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Run" order="3" visible="true" weight="0.2260128" />
+      <window_info anchor="right" id="Run" order="3" visible="true" weight="0.17761394" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.124200426" />
@@ -717,8 +672,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="699">
+          <caret line="52" column="26" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="26" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -727,8 +682,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="76" column="23" lean-forward="true" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+        <state relative-caret-position="362">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

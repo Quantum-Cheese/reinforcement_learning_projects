@@ -28,7 +28,8 @@ An implementation of deep reinforcement learning algorithm—DQN， except for t
 
 the environment I use to experiment  the DQN agent is [LunarLander-v2](https://gym.openai.com/envs/LunarLander-v2)
 
-### 
+### 5. MountCar_continuous
 
+Using mutiple approaches to solve the gym  MountainCarContinuous v0 <https://github.com/openai/gym/wiki/MountainCarContinuous-v0>
 
-
+* cross_entropy_method 
