@@ -6,6 +6,7 @@ from torch.autograd import Variable
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
+
 class Agent(nn.Module):
     def __init__(self, env, h_size=16):
         super(Agent, self).__init__()

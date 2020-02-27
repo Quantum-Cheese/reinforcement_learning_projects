@@ -1,4 +1,5 @@
 import gym
+import arrow
 import random
 import arrow
 import pandas as pd
@@ -8,8 +9,6 @@ from collections import deque
 import matplotlib
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
-from LunarLander.dqn import Agent
-from LunarLander.ddqn_v2 import AgentV2
 from LunarLander.DQN.ddqn_v3 import AgentV3
 
 plt.ion()
@@ -144,6 +143,8 @@ if __name__=="__main__":
     # 用训练好的智能体跑分并绘制奖励曲线
     test_scores=trained_agent_test('dueling_model.pth')
     plot_scores(test_scores,'images/dueling-ddqn_testing.png')
+
+    arrow.now()
 
 
 

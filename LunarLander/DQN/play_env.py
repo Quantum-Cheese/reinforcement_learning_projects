@@ -6,9 +6,7 @@ from collections import deque
 import matplotlib.pyplot as plt
 from LunarLander.DQN.dqn import Agent
 
-from pyvirtualdisplay import Display
-# display = Display(visible=0, size=(1400, 900))
-# display.start()
+
 
 env = gym.make('LunarLander-v2')
 env.seed(0)
