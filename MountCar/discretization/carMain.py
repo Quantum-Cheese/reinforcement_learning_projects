@@ -1,14 +1,11 @@
-import sys
 import numpy as np
 import gym
 import matplotlib.pyplot as plt
-import pandas as pd
 
-from MountCar.agent_ql import QLearningAgent
-from MountCar.carRun import run
-from MountCar.discretization import create_uniform_grid,discretize
-from MountCar.visual import visualize_samples
-from pyvirtualdisplay import Display
+from MountCar.discretization.agent_ql import QLearningAgent
+from MountCar.discretization.carRun import run
+from MountCar.discretization.discretization import create_uniform_grid
+
 # display = Display(visible=0, size=(1400, 900))
 # display.start()
 

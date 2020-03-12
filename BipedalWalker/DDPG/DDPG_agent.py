@@ -4,7 +4,7 @@ import random
 import copy
 from collections import namedtuple, deque
 
-from BipedalWalker.DDPG_model import Actor, Critic
+from BipedalWalker.DDPG.DDPG_model import Actor, Critic
 
 import torch
 import torch.nn.functional as F
@@ -23,7 +23,7 @@ N= 6                  # every update, call learn() for N times
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
-class Agent:
+class DDPGAgent:
     def __init__(self, state_size, action_size, seed):
 
         self.state_size = state_size

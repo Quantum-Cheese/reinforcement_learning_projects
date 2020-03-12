@@ -18,3 +18,13 @@ print("- high:", env.observation_space.high)
 
 # Explore action space
 print("Action space:", env.action_space)
+
+state = env.reset()
+for _ in range(1000):
+    env.render()
+    action = np.random.uniform(low=-1.0, high=1.0,size=3)
+    print(action)
+    next_state, reward, done, _ = env.step(action)
+    print(next_state, reward)
+    if done:
+        break

@@ -1,6 +1,6 @@
 import gym
 import numpy as np
-from MountCar.discretization import create_uniform_grid,discretize
+from MountCar.discretization.discretization import create_uniform_grid,discretize
 
 
 class QLearningAgent:

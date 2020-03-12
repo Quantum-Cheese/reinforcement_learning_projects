@@ -4,9 +4,8 @@ import gym
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from MountCar.agent_ql import QLearningAgent
-from MountCar.discretization import create_uniform_grid,discretize
-from MountCar.visual import visualize_samples
+from MountCar.discretization.agent_ql import QLearningAgent
+from MountCar.discretization.discretization import create_uniform_grid
 
 
 def run(agent, env, num_episodes=20000, mode='train'):

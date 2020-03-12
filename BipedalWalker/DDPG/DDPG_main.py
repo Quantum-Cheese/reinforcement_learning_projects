@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import gym
 import torch
-from BipedalWalker.DDPG_agent import Agent
+from BipedalWalker.DDPG.DDPG_agent import DDPGAgent
 
 
 def ddpg(env,agent,n_episodes=2000, max_t=700):
@@ -66,7 +66,7 @@ if __name__=="__main__":
     env.seed(10)
 
     # 初始化 ddpg agent
-    agent=Agent(state_size=env.observation_space.shape[0], action_size=env.action_space.shape[0], seed=10)
+    agent=DDPGAgent(state_size=env.observation_space.shape[0], action_size=env.action_space.shape[0], seed=10)
     # 训练并保存 scores
     scores=ddpg(env,agent)
     plot_scores(scores)

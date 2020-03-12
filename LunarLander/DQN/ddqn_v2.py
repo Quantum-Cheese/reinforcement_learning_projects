@@ -10,7 +10,7 @@ import torch
 import torch.nn.functional as F
 import torch.optim as optim
 
-from Pro_LunarLander.model import QNetwork
+from LunarLander.DQN.model import QNetwork
 
 BUFFER_SIZE = int(1e4)  # replay buffer size
 BATCH_SIZE = 64  # minibatch size

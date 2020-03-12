@@ -6,12 +6,11 @@
 import numpy as np
 import random
 from collections import namedtuple, deque
-
-from Pro_LunarLander.model import QNetwork
-
 import torch
 import torch.nn.functional as F
 import torch.optim as optim
+from LunarLander.DQN.model import QNetwork
+
 
 BUFFER_SIZE = int(1e5)  # replay buffer size
 BATCH_SIZE = 64  # minibatch size

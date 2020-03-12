@@ -1,5 +1,5 @@
 import numpy as np
-from MountCar.visual import visualize_samples
+from MountCar.discretization.visual import visualize_samples
 
 def create_uniform_grid(low, high, bins=(10, 10)):
     """Define a uniformly-spaced grid that can be used to discretize a space.

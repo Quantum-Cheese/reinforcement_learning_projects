@@ -11,6 +11,7 @@ print('action space:', env.action_space)
 
 # 观察一个未经训练的随机智能体
 state = env.reset()
+print(state)
 
 done=False
 for _ in range(1000):

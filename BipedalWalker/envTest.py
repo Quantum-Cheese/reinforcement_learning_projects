@@ -14,13 +14,12 @@ state = env.reset()
 print(state,type(state))
 
 for _ in range(1000):
-    env.render()
+    # env.render()
     action = np.random.uniform(low=-1.0, high=1.0,size=4)
-    print(action)
+    print("action",action)
     next_state, reward, done, _ = env.step(action)
     print(next_state, reward)
     if done:
         break
-
 
 env.close()

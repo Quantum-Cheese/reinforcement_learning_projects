@@ -1,139 +1,97 @@
-import random
+from collections import deque
 import numpy as np
-from collections import defaultdict
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-from torch.distributions import Bernoulli
-from CartPole.Policy_Gradient.model import Policy
-from torch.autograd import Variable
 import gym
+import matplotlib.pyplot as plt
+import torch
+import torch.optim as optim
+from CartPole.Policy_Gradient.model import Policy
+from torch.distributions import Categorical
+
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
+GAMMA=1.0
+LR=0.001
 
 
 class Agent_PG():
 
-    def __init__(self, state_size, seed=0):
-        self.state_size = state_size
-        self.action_size = 1  # 输出维度为默认为1，表示选择left的概率
+    def __init__(self, state_size, action_size,type):
+        self.policy=Policy(state_size,action_size).to(device)
+        self.optimizer=optim.Adam(self.policy.parameters(), lr=LR)
+        self.type=type
 
+    def reinforce_loss(self,log_probs,rewards):
+        "------根据 Reinforce 算法计算的损失函数---------"
+        # calculate discount rewards
+        discounts=[GAMMA**i for i in range(len(rewards))]
+        R=sum([g*r for g,r in zip(discounts,rewards)])
 
-    def act(self,policy_net,state):
-        """
-        :param state -- 2d tensor
-        :return:  action -- 1d tensor
-                log_prob -- 1d tensor with grad
-        """
+        loss_arr=[]
+        for log_prob in log_probs:
+            loss_arr.append(-log_prob * R)
 
-        # probs=self.policy(Variable(state))
-        probs=policy_net(state)
-        c=Bernoulli(probs)
-        # 根据动作概率选取一个action
-        action=c.sample()
-        # 所选 action 对应概率的对数值 log[p(a|s)]
-        log_prob=-c.log_prob(action)
+        policy_loss=torch.cat(loss_arr).sum()  # 把n个1d tensor 组成的list 拼接成一个完整的 tensor（1d,size:n）
+        # print(policy_loss)
+        return policy_loss
 
-        # print("lgo_prob",log_prob,log_prob.size())
-        return action,log_prob
-
-    def calculate_loss(self,exps,gamma):
-        # -- calculate discount rewards
-        rewards=exps['rewards']
-        discount = gamma ** np.arange(len(rewards))
-
-        # --- old version
-        # dis_rewards = np.asarray(rewards) * discount
-        # rewards_future = np.cumsum(np.flipud(dis_rewards))
-        # rewards_future = np.flipud(rewards_future)
-
-        # -- Calculate future rewards sum (with discount)
-        running_add = 0
-        discount = list(reversed(discount))
-        for i in reversed(range(len(rewards))):
-            running_add = running_add * discount[i] + rewards[i]
-            rewards[i] = running_add
-        furRewards_dis=np.array(rewards)
+    def pg_loss(self,log_probs,rewards):
+        """----
+        Reinforce 的改进版本：
+        1.Cedit Assignment：对每个 a(t) 计算未来累积折扣回报 R
+        2.对每个t的回报R进行 batch normalization
+        ------"""
+        # calculate the (discounted) future rewards
+        furRewards_dis = []
+        for i in range(len(rewards)):
+            discount = [GAMMA ** i for i in range(len(rewards) - i)]
+            f_rewards = rewards[i:]
+            furRewards_dis.append(sum(d * f for d, f in zip(discount, f_rewards)))
+        # print(furRewards_dis)
 
         # -- Normalize reward
         mean = np.mean(furRewards_dis)
         std = np.std(furRewards_dis) + 1.0e-10
         rewards_normalized = (furRewards_dis - mean) / std
 
-        # -- convert to tensor
-        # rewards_final = torch.tensor(rewards_normalized, dtype=torch.float)
-        log_probs = exps['logProbs']
-        loss_arr=rewards_normalized*np.array(log_probs)
-
+        # -- calculate policy loss
+        loss_arr = []
+        for i in range(len(rewards_normalized)):
+            loss_arr.append(-log_probs[i]*rewards_normalized[i])
         # print(loss_arr)
 
-        # log_probs=torch.tensor(log_probs,requires_grad=True)
-        loss_tensor=torch.tensor(list(loss_arr),requires_grad=True)
+        policy_loss = torch.cat(loss_arr).sum()
+        # print(policy_loss,"----------\n")
 
-        # final loss
-        loss = torch.mean(loss_tensor)
-        # print(loss)
-        return loss
+        return policy_loss
 
-    def policy_update(self, policy_net,env, max_t, gamma=0.99,learning_rate=0.001):
-        state=env.reset()
-
-        # -- 收集一个episode的 trajectory
-        experiences=defaultdict(list)
-
+    def train(self,env,max_t):
+        state = env.reset()
+        log_probs = []
+        rewards = []
+        # collect log probs and rewards for a single trajectory
         for t in range(max_t):
-            experiences["states"].append(state)
-            # convert state to Tensor
-            state = torch.from_numpy(state).float()
-            state = Variable(state)
-
-            # choose an action
-            action,log_prob=self.act(policy_net,state)
-            action=action.data.numpy().astype(int)[0]
+            # convert state to tensor
+            state = torch.from_numpy(state).float().unsqueeze(0).to(device)  # 升维 1d->2d
+            action, log_prob = self.policy.act(state)
             next_state, reward, done, _ = env.step(action)
-
-            # check the finishing condition
+            log_probs.append(log_prob)
+            rewards.append(reward)
+            state = next_state
             if done:
                 break
+        total_reward = sum(rewards)
 
-            # collect s,a,r,s'...
-            experiences["actions"].append(action)
-            experiences["rewards"].append(reward)
-            experiences["logProbs"].append(log_prob)
-            state=next_state
+        # calculate loss
+        loss = self.reinforce_loss(log_probs, rewards)
+        if self.type=="reinforce":
+            loss = self.reinforce_loss(log_probs, rewards)
+        elif self.type=="pg":
+            loss = self.pg_loss(log_probs, rewards)
 
-        # -- calculate loss (every episode)
-        loss=self.calculate_loss(experiences,gamma)
-
-        # -- update policy network's parameters
-        optimizer=torch.optim.RMSprop(policy_net.parameters(), lr=learning_rate)
-        optimizer.zero_grad()
+        # backprop the loss to update policy network
+        self.optimizer.zero_grad()
         loss.backward()
-        optimizer.step()
+        self.optimizer.step()
 
-        total_R=sum(experiences["rewards"])
-        return total_R,loss.item()
-
-
-if __name__=="__main__":
-    env = gym.make('CartPole-v0')
-    env.seed(0)
-
-    agent_pg = Agent_PG(state_size=4)
-    agent_pg.policy_update(env,4)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        return total_reward,loss.detach().numpy()
 
