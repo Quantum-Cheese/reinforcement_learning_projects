@@ -1,8 +1,11 @@
 import random
+import numpy as np
 from collections import namedtuple, deque
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 class QNetwork(nn.Module):
@@ -18,8 +21,8 @@ class QNetwork(nn.Module):
         """
         super(QNetwork, self).__init__()
         self.seed = torch.manual_seed(seed)
-        self.fc1=nn.Linear(state_size,64)
-        self.fc2=nn.Linear(64,64)
+        self.fc1=nn.Linear(state_size,128)
+        self.fc2=nn.Linear(128,64)
         self.fc3=nn.Linear(64,action_size)
 
     def forward(self, state):
@@ -45,6 +48,20 @@ class Replay_Buffer():
 
     def sample(self):
         experiences = random.sample(self.memory, k=self.batch_size)
+
+        states=torch.from_numpy(np.vstack([e.state for e in experiences if e is not None])).float().to(device)
+        actions=torch.from_numpy(np.vstack([e.action for e in experiences if e is not None])).long().to(device)
+        rewards=torch.from_numpy(np.vstack([e.reward for e in experiences if e is not None])).float().to(device)
+        next_states=torch.from_numpy(np.vstack([e.next_state for e in experiences if e is not None])).float().to(device)
+        dones=torch.from_numpy(np.vstack([e.done for e in experiences if e is not None]).astype(np.uint8)).float().to(device)
+
+        return (states,actions,rewards,next_states,dones)
+
+    def __len__(self):
+        """Return the current size of internal memory."""
+        return len(self.memory)
+
+
 
 
 

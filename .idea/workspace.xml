@@ -2,32 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c857265-4585-4d28-b6c4-603946da32c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BipedalWalker/DQN/TD3_agent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BipedalWalker/DQN/TD3_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BipedalWalker/main_bipedal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/agent_old.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity-projects/Pro1.Navigation/navigation_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/PPO_with_A.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/PPO_with_R.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Acrobot/envTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Acrobot/envTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BipedalWalker/3layers-Crtic-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BipedalWalker/3layers-Crtic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BipedalWalker/DDPG_agent.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BipedalWalker/DDPG_main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BipedalWalker/DDPG_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BipedalWalker/ddpg_1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BipedalWalker/envTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/BipedalWalker/envTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BipedalWalker/model_save/actor1.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BipedalWalker/model_save/actor2.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BipedalWalker/model_save/checkpoint_actor.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BipedalWalker/model_save/checkpoint_critic.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BipedalWalker/model_save/critic1.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BipedalWalker/model_save/critic2.pth" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/agent_PG.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/agent_PG.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/main_PG.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/main_CartPole.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/agent_old.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/main_CartPole.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/main_CartPole.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CartPole/envTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/envTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LunarLander/DQN/ddqn_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/LunarLander/DQN/ddqn_v1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LunarLander/DQN/ddqn_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/LunarLander/DQN/ddqn_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/ref_pg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LunarLander/DQN/ddqn_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/LunarLander/DQN/ddqn_v3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunarLander/DQN/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/LunarLander/DQN/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,15 +43,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\RL_workspace\CartPole\Policy_Gradient" />
+      <recent name="D:\RL_workspace\CartPole" />
       <recent name="D:\RL_workspace\MountCar\discretization" />
       <recent name="D:\RL_workspace\CartPole\Policy_Gradient\models" />
       <recent name="D:\RL_workspace\BipedalWalker" />
-      <recent name="D:\RL_workspace\Unity-projects\Pro1.Navigation" />
-      <recent name="D:\RL_workspace\BipedalWalker\model_save" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.dqn_main">
-    <configuration name="agent_PG" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.PPO_with_R">
+    <configuration name="PPO_with_R" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RL_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -79,7 +63,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CartPole/Policy_Gradient/agent_PG.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CartPole/Policy_Gradient/PPO_with_R.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -109,27 +93,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="envTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RL_workspace" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MountCar" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\RL_workspace\MountCar\discretization\envTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="env_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RL_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,6 +114,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RL_workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LunarLander/DQN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LunarLander/DQN/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main_CartPole" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RL_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,7 +147,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CartPole/Policy_Gradient/main_CartPole.py" />
+      <option name="SCRIPT_NAME" value="D:\RL_workspace\CartPole\main_CartPole.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,10 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.PPO_with_R" />
         <item itemvalue="Python.dqn_main" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.env_test" />
         <item itemvalue="Python.main_CartPole" />
-        <item itemvalue="Python.agent_PG" />
       </list>
     </recent_temporary>
   </component>
@@ -211,36 +196,36 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="489" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1582871068683" />
-    <state x="470" y="190" key="FileChooserDialogImpl" timestamp="1583895680760">
+    <state x="470" y="190" key="FileChooserDialogImpl" timestamp="1584323085070">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="470" y="190" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1580998399073" />
-    <state x="2508" y="240" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580712695263" />
-    <state x="470" y="190" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583895680760" />
-    <state width="241" height="696" key="GridCell.Tab.0.bottom" timestamp="1583910296142">
+    <state x="2508" y="240" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584263935091" />
+    <state x="470" y="190" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584323085070" />
+    <state width="427" height="689" key="GridCell.Tab.0.bottom" timestamp="1584435134381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="312" height="696" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1580729989214" />
+    <state width="452" height="696" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1584190072483" />
     <state width="563" height="912" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583765557113" />
-    <state width="241" height="696" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583910296142" />
-    <state width="241" height="696" key="GridCell.Tab.0.center" timestamp="1583910296142">
+    <state width="427" height="689" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584435134381" />
+    <state width="427" height="689" key="GridCell.Tab.0.center" timestamp="1584435134380">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="312" height="696" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1580729989214" />
+    <state width="452" height="696" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1584190072483" />
     <state width="563" height="912" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583765557112" />
-    <state width="241" height="696" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583910296142" />
-    <state width="241" height="696" key="GridCell.Tab.0.left" timestamp="1583910296141">
+    <state width="427" height="689" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584435134380" />
+    <state width="427" height="689" key="GridCell.Tab.0.left" timestamp="1584435134380">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="312" height="696" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1580729989214" />
+    <state width="452" height="696" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1584190072483" />
     <state width="563" height="912" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583765557112" />
-    <state width="241" height="696" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583910296141" />
-    <state width="241" height="696" key="GridCell.Tab.0.right" timestamp="1583910296142">
+    <state width="427" height="689" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584435134380" />
+    <state width="427" height="689" key="GridCell.Tab.0.right" timestamp="1584435134380">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="312" height="696" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1580729989214" />
+    <state width="452" height="696" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1584190072483" />
     <state width="563" height="912" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583765557112" />
-    <state width="241" height="696" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583910296142" />
+    <state width="427" height="689" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584435134380" />
     <state width="418" height="328" key="GridCell.Tab.1.bottom" timestamp="1580719113996">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

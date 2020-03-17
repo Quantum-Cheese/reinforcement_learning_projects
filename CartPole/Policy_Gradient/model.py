@@ -32,7 +32,10 @@ class Policy(nn.Module):
         m = Categorical(probs)
         action = m.sample()
         # return action for current state, and the corresponding probability
-        return action.item(), m.log_prob(action)
+
+        result_dic={"action":action.item(),"log_prob":m.log_prob(action)
+            ,"prob":probs[:,action.item()].item()}
+        return result_dic
 
 
 if __name__=="__main__":

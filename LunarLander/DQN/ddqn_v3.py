@@ -19,7 +19,7 @@ TAU = 1e-3  # for soft update of target parameters
 LR = 5e-3  # learning rate
 UPDATE_EVERY = 4  # how often to update the network
 E=1e-8 # small number to add to the priority of experience
-ALPHA=0.6
+
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -38,7 +38,7 @@ class AgentV3():
         """
         self.state_size = state_size
         self.action_size = action_size
-        self.seed = random.seed(seed)
+        # self.seed = random.seed(seed)
 
         # Q-Network
         self.qnetwork_local = QNetwork(state_size, action_size, seed).to(device)
@@ -60,7 +60,8 @@ class AgentV3():
             # If enough samples are available in memory, get random subset and learn
             if len(self.memory) > BATCH_SIZE:
                 experiences = self.memory.sample()
-                self.learn(experiences, GAMMA)
+                loss=self.learn(experiences, GAMMA)
+                return loss
 
     def act(self, state, eps=0.):
         """Returns actions for given state as per current policy.
@@ -117,6 +118,8 @@ class AgentV3():
         # ------------------- update target network ------------------- #
         self.soft_update(self.qnetwork_local, self.qnetwork_target, TAU)
 
+        return loss.detach().numpy()
+
     def soft_update(self, local_model, target_model, tau):
         """Soft update model parameters.
         θ_target = τ*θ_local + (1 - τ)*θ_target
@@ -144,11 +147,11 @@ class ReplayBuffer:
             batch_size (int): size of each training batch
             seed (int): random seed
         """
-        self.action_size = action_size
+        # self.action_size = action_size
         self.memory = deque(maxlen=buffer_size)
         self.batch_size = batch_size
         self.experience = namedtuple("Experience", field_names=["state", "action", "reward", "next_state", "done"])
-        self.seed = random.seed(seed)
+        # self.seed = random.seed(seed)
 
     def add(self, state, action, reward, next_state, done):
         """Add a new experience to memory."""

@@ -86,7 +86,7 @@ if __name__=="__main__":
     n_episode=1500
 
     rf_scores=train_agent(env,agent_rf,n_episode,1500,'models/reinforce_model_7.pth')
-    pg_socres=train_agent(env,agent_pg,n_episode,1500,'models/pg_model_4.pth')
+    pg_socres=train_agent(env, agent_pg, n_episode, 1500, 'Policy_Gradient/models/pg_model_4.pth')
 
     # 绘制训练曲线
     x=np.arange(1, n_episode+1)
@@ -103,6 +103,7 @@ if __name__=="__main__":
 
     """测试 agent"""
     # pg_scores=test_agent(agent_pg,1000,'models/pg_model_3.pth')
+
 
 
 

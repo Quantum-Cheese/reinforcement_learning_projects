@@ -39,14 +39,16 @@ def dqn(agent,model_file,n_episodes=20000, max_t=1000,
     for i_episode in range(1, n_episodes + 1):
         state = env.reset()
         score = 0
+        episode_loss=[]
         for t in range(max_t):
             # 在当前状态下获取要采取的 action
             action = agent.act(state, eps)
             # 与环境交互获取 （s',r,done）
             next_state, reward, done, _ = env.step(action)
-
             # 构建 sarsa 序列，传给智能体
-            agent.step(state, action, reward, next_state, done)
+            loss=agent.step(state, action, reward, next_state, done)
+            if loss is not None:
+                episode_loss.append(loss)
             state = next_state
             score += reward
             if done:
@@ -58,9 +60,9 @@ def dqn(agent,model_file,n_episodes=20000, max_t=1000,
         # beta = beta/beta_incre if beta<beta_end else beta_end # update beta (<=1)
         # beta=min((beta+beta_incre),beta_end)
 
-        print('\rEpisode {}\t Epsilon {}\t Beta {}\t Average Score: {:.2f}'.format(i_episode,eps,beta, np.mean(scores_window)),end="")
+        print('\rEpisode {}\t Loss {} \t Average Score: {:.2f}'.format(i_episode,np.mean(episode_loss), np.mean(scores_window)),end="")
         if i_episode % 100 == 0:
-            print('\rEpisode {}\t Epsilon {}\t Beta{}\t Average Score: {:.2f}'.format(i_episode,eps,beta, np.mean(scores_window)))
+            print('\rEpisode {}\t Loss {} \t Average Score: {:.2f}'.format(i_episode,np.mean(episode_loss), np.mean(scores_window)))
             print('\rRunning time:{}\n'.format(arrow.now()-start_time))
         if np.mean(scores_window) >= 200.0:
             print('\nEnvironment solved in {:d} episodes! \t Average Score: {:.2f}'.format(i_episode - 100,

@@ -1,11 +1,7 @@
-from collections import deque
 import numpy as np
-import gym
-import matplotlib.pyplot as plt
 import torch
 import torch.optim as optim
 from CartPole.Policy_Gradient.model import Policy
-from torch.distributions import Categorical
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -37,7 +33,7 @@ class Agent_PG():
     def pg_loss(self,log_probs,rewards):
         """----
         Reinforce 的改进版本：
-        1.Cedit Assignment：对每个 a(t) 计算未来累积折扣回报 R
+        1.Credit Assignment：对每个 a(t) 计算未来累积折扣回报 R
         2.对每个t的回报R进行 batch normalization
         ------"""
         # calculate the (discounted) future rewards
@@ -68,19 +64,20 @@ class Agent_PG():
         state = env.reset()
         log_probs = []
         rewards = []
-        # collect log probs and rewards for a single trajectory
+        # --- collect log probs and rewards for a single trajectory
         for t in range(max_t):
             # convert state to tensor
             state = torch.from_numpy(state).float().unsqueeze(0).to(device)  # 升维 1d->2d
-            action, log_prob = self.policy.act(state)
-            next_state, reward, done, _ = env.step(action)
-            log_probs.append(log_prob)
+            result_dic = self.policy.act(state)
+            next_state, reward, done, _ = env.step(result_dic['action'])
+            log_probs.append(result_dic['log_prob'])
             rewards.append(reward)
             state = next_state
             if done:
                 break
         total_reward = sum(rewards)
 
+        # --- update policy after one completed trajectory
         # calculate loss
         loss = self.reinforce_loss(log_probs, rewards)
         if self.type=="reinforce":
