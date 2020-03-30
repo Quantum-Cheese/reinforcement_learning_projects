@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import gym
 import torch
 from BipedalWalker.DDPG.DDPG_agent import DDPGAgent
-from BipedalWalker.DQN.DQN_agent import DQNAgent
+from BipedalWalker.TD3.DQN_agent import DQNAgent
 
 eps_start=1.0
 eps_end=0.01
@@ -27,7 +27,7 @@ def agent_train(env,agent_name,n_episodes=2000, max_t=700):
 
     scores_deque = deque(maxlen=100)
     scores = []
-    eps = eps_start  # epsilon for DQN
+    eps = eps_start  # epsilon for TD3
 
     for i_episode in range(1, n_episodes+1):
         state = env.reset()
@@ -64,5 +64,5 @@ if __name__=="__main__":
     env = gym.make('BipedalWalker-v2')
     env.seed(10)
 
-    train_scores=agent_train(env, 'DDPG', n_episodes=2000)
+    train_scores=agent_train(env, 'DDPG', n_episodes=3000)
     plot_scores(train_scores)

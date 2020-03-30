@@ -1,5 +1,5 @@
 ## https://www.cnblogs.com/pinard/p/9797695.html ##
-## 强化学习(十一) Prioritized Replay DQN ##
+## 强化学习(十一) Prioritized Replay TD3 ##
 
 import gym
 import tensorflow as tf
@@ -7,7 +7,7 @@ import numpy as np
 import random
 from collections import deque
 
-# Hyper Parameters for DQN
+# Hyper Parameters for TD3
 GAMMA = 0.9  # discount factor for target Q
 INITIAL_EPSILON = 0.5  # starting value of epsilon
 FINAL_EPSILON = 0.01  # final value of epsilon
@@ -131,7 +131,7 @@ class Memory(object):  # stored as ( s, a, r, s_ ) in SumTree
 
 
 class DQN():
-    # DQN Agent
+    # TD3 Agent
     def __init__(self, env):
         # init experience replay
         self.replay_total = 0

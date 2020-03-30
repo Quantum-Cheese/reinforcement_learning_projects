@@ -1,6 +1,6 @@
 """
-对经典 DQN 的改进
-1. Double DQN
+对经典 TD3 的改进
+1. Double TD3
 2. 优先经验回放
 """
 import numpy as np

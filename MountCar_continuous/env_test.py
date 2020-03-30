@@ -12,8 +12,8 @@ env.reset()
 for _ in range(1000):
     env.render()
     action=np.random.uniform(low=env.action_space.low, high=env.action_space.high)
-    print(action)
+
     next_state, reward, done, _ =env.step(action)
     if done:
         break
-    print(next_state, reward)
+

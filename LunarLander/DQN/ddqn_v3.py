@@ -1,6 +1,6 @@
 """
-对经典 DQN 的改进
-1. Double DQN
+对经典 TD3 的改进
+1. Double TD3
 2. Dueling Network
 """
 import numpy as np
@@ -97,7 +97,7 @@ class AgentV3():
         # ----------计算 Q targets------------------------------ #
         # 从local网络的 Q estimated 取最大值对应的动作序列
         Q_expected_next_max = self.qnetwork_local(next_states).detach().argmax(1).unsqueeze(1) # shape:[BATCH_SIZE,1](.unsqueeze(1)转换成列向量)
-        # Double DQN：这些动作序列输入target网络得到对应的 Q 估计值，而不是直接让 target 网络选取最大Q（避免了 overestimated 问题）
+        # Double TD3：这些动作序列输入target网络得到对应的 Q 估计值，而不是直接让 target 网络选取最大Q（避免了 overestimated 问题）
         Q_targets_next = self.qnetwork_target(next_states).gather(1, Q_expected_next_max)
         # 根据公式计算 Q 目标
         Q_targets = rewards + (gamma * Q_targets_next * (1 - dones))

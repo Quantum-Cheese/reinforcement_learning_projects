@@ -1,5 +1,5 @@
 """
-Double DQN
+Double TD3
 """
 import numpy as np
 import random

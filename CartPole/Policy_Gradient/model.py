@@ -6,6 +6,7 @@ import numpy as np
 
 
 class Policy(nn.Module):
+    "single Policy network for Reinforce and PG"
 
     def __init__(self,state_size,action_size):
         super(Policy, self).__init__()
@@ -21,7 +22,6 @@ class Policy(nn.Module):
 
         out=F.relu(self.fc1(x))
         out = F.relu(self.fc2(out))
-        # out = F.sigmoid(self.fc3(out))
         out = F.softmax(self.fc3(out),dim=1)
 
         return out
@@ -36,6 +36,51 @@ class Policy(nn.Module):
         result_dic={"action":action.item(),"log_prob":m.log_prob(action)
             ,"prob":probs[:,action.item()].item()}
         return result_dic
+
+
+class Actor(nn.Module):
+    """Policy netwrok for PPO_R"""
+    "Actor-Critic model for PPO_A"
+
+    def __init__(self,state_size,action_size):
+        super(Actor, self).__init__()
+        self.seed = torch.manual_seed(0)
+        self.fc1 = nn.Linear(state_size, 100)
+        self.fc2 = nn.Linear(100, action_size)
+
+    def forward(self, x):
+        """
+        Build a network that maps state -> action probs.
+        """
+
+        out=F.relu(self.fc1(x))
+        out = F.softmax(self.fc2(out),dim=1)
+        return out
+
+    def act(self,state):
+        # probs for each action (2d tensor)
+        probs = self.forward(state)
+        m = Categorical(probs)
+        action = m.sample()
+        # return action for current state, and the corresponding probability
+
+        result_dic={"action":action.item(),"log_prob":m.log_prob(action)
+            ,"prob":probs[:,action.item()].item()}
+        return result_dic
+
+
+class Critic(nn.Module):
+    " Actor-Critic model for PPO"
+
+    def __init__(self,state_size):
+        super(Critic, self).__init__()
+        self.fc1=nn.Linear(state_size,100)
+        self.fc2=nn.Linear(100,1)
+
+    def forward(self,x):
+        out=F.relu(self.fc1(x))
+        state_value = self.fc2(out)
+        return state_value
 
 
 if __name__=="__main__":

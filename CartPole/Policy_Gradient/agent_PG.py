@@ -1,4 +1,6 @@
 import numpy as np
+import gym
+from collections import deque
 import torch
 import torch.optim as optim
 from CartPole.Policy_Gradient.model import Policy
@@ -60,12 +62,12 @@ class Agent_PG():
 
         return policy_loss
 
-    def train(self,env,max_t):
+    def train(self,env):
         state = env.reset()
         log_probs = []
         rewards = []
         # --- collect log probs and rewards for a single trajectory
-        for t in range(max_t):
+        while True:
             # convert state to tensor
             state = torch.from_numpy(state).float().unsqueeze(0).to(device)  # 升维 1d->2d
             result_dic = self.policy.act(state)
@@ -90,5 +92,20 @@ class Agent_PG():
         loss.backward()
         self.optimizer.step()
 
-        return total_reward,loss.detach().numpy()
+        return total_reward
 
+
+if __name__=="__main__":
+    env = gym.make('CartPole-v0')
+    agent=Agent_PG(state_size=4,action_size=2,type='pg')
+    n_episode=2000
+
+    scores_deque = deque(maxlen=100)
+    scores = []
+    for i_episode in range(1,n_episode+1):
+        Reward=agent.train(env)
+
+        scores_deque.append(Reward)
+        scores.append(Reward)
+        if i_episode % 100 == 0:
+            print('Episode {}\t Average Score: {:.2f}'.format(i_episode, np.mean(scores_deque)))
