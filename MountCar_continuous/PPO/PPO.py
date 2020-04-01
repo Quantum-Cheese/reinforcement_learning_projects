@@ -12,11 +12,11 @@ from torch.utils.data.sampler import BatchSampler, SubsetRandomSampler
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 GAMMA=0.99
-LR_a=0.001
-LR_c=0.003
+LR_a=0.0005
+LR_c=0.0005
 BATCH_SIZE=32
 CLIP=0.2
-UPDATE_TIME=10
+UPDATE_TIME=5
 max_grad_norm=0.5
 
 
@@ -41,11 +41,13 @@ class CriticNet(nn.Module):
 
     def __init__(self,state_size):
         super(CriticNet, self).__init__()
-        self.fc = nn.Linear(state_size, 128)
+        self.fc1 = nn.Linear(state_size, 64)
+        self.fc2 = nn.Linear(64,128)
         self.v_head = nn.Linear(128, 1)
 
     def forward(self, x):
-        x = F.relu(self.fc(x))
+        x = F.relu(self.fc1(x))
+        x = F.relu(self.fc2(x))
         state_value = self.v_head(x)
         return state_value
 

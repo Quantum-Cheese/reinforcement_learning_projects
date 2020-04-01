@@ -60,7 +60,8 @@ def train_agent(env,agent,n_episode,model_file):
 
 if __name__=="__main__":
     env = gym.make('MountainCarContinuous-v0')
-    agent = PPO(state_size=env.observation_space.shape[0], action_size=env.action_space.shape[0])
+    agent = PPO(state_size=env.observation_space.shape[0],
+                action_size=env.action_space.shape[0])
 
     train_scores=train_agent(env,agent,3000,'ppo_1.pth')
     plot_scores(train_scores,'ppo_1.png')

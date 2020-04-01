@@ -45,16 +45,17 @@ class Actor(nn.Module):
     def __init__(self,state_size,action_size):
         super(Actor, self).__init__()
         self.seed = torch.manual_seed(0)
-        self.fc1 = nn.Linear(state_size, 100)
-        self.fc2 = nn.Linear(100, action_size)
+        self.fc1 = nn.Linear(state_size, 128)
+        # self.fc2 = nn.Linear(64,128)
+        self.fc2= nn.Linear(128, action_size)
 
     def forward(self, x):
         """
         Build a network that maps state -> action probs.
         """
 
-        out=F.relu(self.fc1(x))
-        out = F.softmax(self.fc2(out),dim=1)
+        x=F.relu(self.fc1(x))
+        out = F.softmax(self.fc2(x),dim=1)
         return out
 
     def act(self,state):
@@ -74,17 +75,18 @@ class Critic(nn.Module):
 
     def __init__(self,state_size):
         super(Critic, self).__init__()
-        self.fc1=nn.Linear(state_size,100)
-        self.fc2=nn.Linear(100,1)
+        self.fc1=nn.Linear(state_size,128)
+        # self.fc2=nn.Linear(64,128)
+        self.fc2=nn.Linear(128,1)
 
     def forward(self,x):
-        out=F.relu(self.fc1(x))
-        state_value = self.fc2(out)
+        x=F.relu(self.fc1(x))
+        state_value = self.fc2(x)
         return state_value
 
 
 if __name__=="__main__":
-    pass
+
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     state = np.array([-0.04456399, 0.04653909, 0.01326909, -0.02099827])
     state = torch.from_numpy(state).float().unsqueeze(0).to(device)

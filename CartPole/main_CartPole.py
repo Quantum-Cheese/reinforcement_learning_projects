@@ -136,11 +136,15 @@ if __name__=="__main__":
     agent_ppoR=PPO_v1(state_size=4,action_size=2)
     agent_ppoA=PPO_V2(state_size=4,action_size=2)
 
-    # train_agent_multi_times(env,agent_ppoA,2000,5,'Policy_Gradient/plots/PPO-A_train_5_times1.png')
+    train_agent_multi_times(env,agent_ppoA,2000,5,'Policy_Gradient/plots/PPO-A_train_5times_2.png')
 
-    agents={'PPO with R':agent_ppoR,'PPO with A':agent_ppoA}
-    train_diff_agents(env,agents,2000,'Policy_Gradient/plots/PPO-A vs.PPO-R_1'
-                                      '.png')
+    agents={'PPO with R':agent_ppoR,
+            'PPO with A':agent_ppoA,
+            'Policy Gradient':agent_pg,
+            'Reinforce':agent_rf}
+
+    # train_diff_agents(env,agents,2000,'Policy_Gradient/diff_algorithm.png')
+    # train_agent(env,agent_ppoA,2000,'Policy_Gradient/models/ppo_A.pth')
 
 
 
