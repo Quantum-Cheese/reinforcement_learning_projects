@@ -17,6 +17,7 @@ LR_c=0.0005
 BATCH_SIZE=32
 CLIP=0.2
 UPDATE_TIME=5
+BETA=0.01
 max_grad_norm=0.5
 
 
@@ -107,7 +108,12 @@ class PPO():
         # calculate clipped surrogate function
         surr1 = ratios * advantage
         surr2 = torch.clamp(ratios, 1 - CLIP, 1 + CLIP) * advantage
-        policy_loss = -torch.min(surr1, surr2).mean()
+        policy_loss = -torch.min(surr1, surr2)
+
+        # adding entropy term to the loss function
+        entropy = -(new_probs * torch.log(old_probs + 1.e-10) + (1.0 - new_probs) * torch.log(1.0 - old_probs + 1.e-10))
+        policy_loss += BETA * entropy
+        policy_loss=torch.mean(policy_loss)
 
         # update parameters
         self.policy_optimizer.zero_grad()

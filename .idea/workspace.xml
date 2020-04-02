@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c857265-4585-4d28-b6c4-603946da32c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MountCar_continuous/DDPG/agent_ddpg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MountCar_continuous/DDPG/mcar_ddpg_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CartPole/PPO_multiple_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/PPO_multiple_1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/PPO_with_A.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/PPO_with_A.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/plots/PPO-A_train_5_times1.png" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/plots/PPO-A_train_5_times1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CartPole/main_CartPole.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/main_CartPole.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MountCar_continuous/PPO/MCar_continuous_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar_continuous/PPO/MCar_continuous_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MountCar_continuous/PPO/PPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar_continuous/PPO/PPO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/checkpoint.pth" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/checkpoint.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pong_game/.idea/Pong_game.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pong_game/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pong_game/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pong_game/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pong_game/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pong_game/PPO.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pong_game/PPO_solution.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pong_game/REINFORCE_solution.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pong_game/parallelEnv.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pong_game/play_pong.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pong_game/pong-REINFORCE.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pong_game/pong_utils.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +44,7 @@
       <recent name="D:\RL_workspace\CartPole" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.mcar_ddpg_main">
+  <component name="RunManager" selected="Python.main_CartPole">
     <configuration name="MCar_continuous_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RL_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,9 +152,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main_CartPole" />
         <item itemvalue="Python.mcar_ddpg_main" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.main_CartPole" />
         <item itemvalue="Python.MCar_continuous_main" />
         <item itemvalue="Python.envTest" />
       </list>
@@ -219,30 +200,30 @@
     <state x="470" y="190" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1580998399073" />
     <state x="2508" y="240" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584263935091" />
     <state x="470" y="190" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585617117634" />
-    <state width="413" height="696" key="GridCell.Tab.0.bottom" timestamp="1585721552747">
+    <state width="191" height="696" key="GridCell.Tab.0.bottom" timestamp="1585788633829">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="470" height="696" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1584619597232" />
     <state width="418" height="912" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585659879533" />
-    <state width="413" height="696" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585721552747" />
-    <state width="413" height="696" key="GridCell.Tab.0.center" timestamp="1585721552746">
+    <state width="191" height="696" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585788633829" />
+    <state width="191" height="696" key="GridCell.Tab.0.center" timestamp="1585788633829">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="470" height="696" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1584619597231" />
     <state width="418" height="912" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585659879533" />
-    <state width="413" height="696" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585721552746" />
-    <state width="413" height="696" key="GridCell.Tab.0.left" timestamp="1585721552746">
+    <state width="191" height="696" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585788633829" />
+    <state width="191" height="696" key="GridCell.Tab.0.left" timestamp="1585788633829">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="470" height="696" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1584619597231" />
     <state width="418" height="912" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585659879533" />
-    <state width="413" height="696" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585721552746" />
-    <state width="413" height="696" key="GridCell.Tab.0.right" timestamp="1585721552747">
+    <state width="191" height="696" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585788633829" />
+    <state width="191" height="696" key="GridCell.Tab.0.right" timestamp="1585788633829">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="470" height="696" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1584619597231" />
     <state width="418" height="912" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585659879533" />
-    <state width="413" height="696" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585721552747" />
+    <state width="191" height="696" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585788633829" />
     <state width="567" height="246" key="GridCell.Tab.1.bottom" timestamp="1585291365866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
