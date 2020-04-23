@@ -76,7 +76,7 @@ class PPO_V2():
         # update parameters
         self.policy_optimizer.zero_grad()
         policy_loss.backward()
-        nn.utils.clip_grad_norm_(self.policy.parameters(), max_grad_norm)
+        # nn.utils.clip_grad_norm_(self.policy.parameters(), max_grad_norm)
         self.policy_optimizer.step()
 
         # -- update value(critic) network -- #
@@ -84,7 +84,7 @@ class PPO_V2():
         # self.writer.add_scalar('loss/value_loss', value_loss, global_step=self.train_step)
         self.critic_optimizer.zero_grad()
         value_loss.backward()
-        nn.utils.clip_grad_norm_(self.critic.parameters(), max_grad_norm)
+        # nn.utils.clip_grad_norm_(self.critic.parameters(), max_grad_norm)
         self.critic_optimizer.step()
 
         self.train_step+=1

@@ -1,13 +1,13 @@
 import random
 import numpy as np
 import gym
-from collections import namedtuple,deque
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.distributions import Normal
 from torch.utils.data.sampler import BatchSampler, SubsetRandomSampler
+from Reacher.PPO.PPO_utils import ActorNet,CriticNet,Memory
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -19,54 +19,6 @@ CLIP=0.2
 UPDATE_TIME=5
 BETA=0.01
 max_grad_norm=0.5
-
-
-class ActorNet(nn.Module):
-
-    def __init__(self,state_size,action_size):
-        super(ActorNet, self).__init__()
-        self.fc1 = nn.Linear(state_size, 128)
-        self.fc2 = nn.Linear(128,128)
-        self.mu_head = nn.Linear(128, action_size)
-        self.sigma_head = nn.Linear(128, action_size)
-
-    def forward(self, x):
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        mu = 2.0 * torch.tanh(self.mu_head(x))
-        sigma = F.softplus(self.sigma_head(x))
-        return (mu, sigma)
-
-
-class CriticNet(nn.Module):
-
-    def __init__(self,state_size):
-        super(CriticNet, self).__init__()
-        self.fc1 = nn.Linear(state_size, 128)
-        self.fc2 = nn.Linear(128,128)
-        self.v_head = nn.Linear(128, 1)
-
-    def forward(self, x):
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        state_value = self.v_head(x)
-        return state_value
-
-
-class Memory():
-    def __init__(self):
-        self.trajectory=[]
-        self.Transition = namedtuple('Transition', ['state', 'action', 'prob', 'reward'])
-
-    def add(self,state,action,prob,reward):
-        # state = torch.from_numpy(state).float().unsqueeze(0).to(device)
-        self.trajectory.append(self.Transition(state,action,prob,reward))
-
-    def clean_buffer(self):
-        del self.trajectory[:]
-
-    def __len__(self):
-        return len(self.trajectory)
 
 
 class PPO():
@@ -123,7 +75,7 @@ class PPO():
         self.policy_optimizer.step()
 
         # -- update value(critic) network -- #
-        value_loss = F.smooth_l1_loss(f_Rewrds, V)
+        value_loss = F.mse_loss(f_Rewrds, V)
         self.critic_optimizer.zero_grad()
         value_loss.backward()
         # nn.utils.clip_grad_norm_(self.critic.parameters(), max_grad_norm)
@@ -158,23 +110,25 @@ class PPO():
 
         self.memory.clean_buffer()  # clear trajectory
 
-    def train(self,env):
-        state = env.reset()
+    def train(self,env,brain_name):
+        env_info = env.reset(train_mode=True)[brain_name]  # reset the Environment
+        state = env_info.vector_observations[0]  # get the initial state
         total_reward=0
         while True:
+            # -- agent act following the current policy
             action,log_prob = self.act(state)
-
-            next_state, reward, done, _ = env.step(action)
+            # -- interact with the env
+            env_info = env.step(action)[brain_name]
+            next_state = env_info.vector_observations[0]
+            reward = env_info.rewards[0]
+            done = env_info.local_done[0]
             # --store transition in this current trajectory
             self.memory.add(state,action,log_prob,reward)
             state=next_state
             total_reward+=reward
             if done:
                 break
-
         if BATCH_SIZE <= len(self.memory):
             self.learn()
 
         return total_reward
-
-

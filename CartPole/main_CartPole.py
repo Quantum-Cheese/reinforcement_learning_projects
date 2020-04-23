@@ -28,7 +28,7 @@ def watch_smart_agent(agent,model_name):
 
 
 def plot_scores(scores,file_name,multi_time=False):
-    "绘制 single agent 训练曲线：单次训练单曲线图；多次训练多条曲线"
+    "绘制多次训练多条曲线"
     if multi_time:
         x=np.arange(1, len(scores[0]) + 1)
         for n in range(len(scores)):
@@ -86,12 +86,12 @@ def train_agent(env,agent,n_episode,model_file):
         scores_deque.append(total_reward)
         scores.append(total_reward)
 
-        print('\rEpisode {}\tAverage Score: {:.2f}\tScore: {:.2f}'
+        print('\r Episode {}\tAverage Score: {:.2f}\tScore: {:.2f}'
               .format(i_episode, np.mean(scores_deque), total_reward), end="")
         if i_episode % 100 == 0:
-            print('Episode {}\t Average Score: {:.2f}\n'.format(i_episode,np.mean(scores_deque)))
+            print('\n Episode {}\t Average Score: {:.2f}\n'.format(i_episode,np.mean(scores_deque)))
         if np.mean(scores_deque) >= 195.0:
-            print('Environment solved in {:d} episodes!\tAverage Score: {:.2f}\n----------\n'.format(i_episode,
+            print('\n Environment solved in {:d} episodes!\tAverage Score: {:.2f}\n----------\n'.format(i_episode,
                                                                                        np.mean(scores_deque)))
             torch.save(agent.policy.state_dict(),model_file)
             break
@@ -112,7 +112,7 @@ def train_agent_multi_times(env, agent, n_episode, train_time, file):
               .format((n + 1), np.mean(scores[-100:])))
         scores_2d.append(scores)
 
-    plot_scores(scores_2d, file)
+    plot_scores(scores_2d, file,multi_time=True)
 
 
 def train_diff_agents(env,agents,n_episode,file):
@@ -140,8 +140,8 @@ if __name__=="__main__":
     ppo_without_entropy=PPO_V2(state_size=4,action_size=2,add_entropy=False)
     ppo_with_entropy=PPO_V2(state_size=4,action_size=2,add_entropy=True)
 
-    # train_scores = train_agent(env, ppo_with_entropy, 2000, 'Policy_Gradient/models/PPO_new.pth')
-    # plot_scores(train_scores, 'Policy_Gradient/plots/PPO_with_entropy.png')
+    #train_scores = train_agent(env, ppo_with_entropy, 2000, 'Policy_Gradient/models/PPO_new.pth')
+    #plot_scores(train_scores, 'Policy_Gradient/plots/PPO_with_entropy_1.png')
 
     # agents={'PPO with R':ppo_R,
     #         'PPO with A':ppo_with_entropy,
@@ -150,8 +150,8 @@ if __name__=="__main__":
 
     ppo_agents={'PPO_R':ppo_R,'PPO_A_org':ppo_without_entropy,'PPO_A_entropy':ppo_with_entropy}
 
-    #train_diff_agents(env,ppo_agents,1500,'Policy_Gradient/plots/PPO_comparison_1.png')
-    train_agent_multi_times(env,ppo_with_entropy,2000,5,'Policy_Gradient/plots/PPO-A_train_5times_2.png')
+    train_diff_agents(env,ppo_agents,1500,'Policy_Gradient/plots/PPO_comparison_4.png')
+    # train_agent_multi_times(env,ppo_with_entropy,1300,5,'Policy_Gradient/plots/PPO-entropy_5times.png')
 
 
 

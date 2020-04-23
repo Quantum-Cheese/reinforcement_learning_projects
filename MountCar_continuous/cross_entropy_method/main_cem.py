@@ -4,7 +4,7 @@ import numpy as np
 from collections import deque
 import matplotlib.pyplot as plt
 import torch
-from MountCar_continuous.cross_entropy_method.agent import Agent
+from MountCar_continuous.cross_entropy_method.agent_cem import Agent
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
