@@ -103,9 +103,12 @@ if __name__=="__main__":
     action_size = brain.vector_action_space_size
 
     # create DDPG and PPO agents
-    agent_ddpg=DDPG(state_size,action_size,0)
+    # agent_ddpg=DDPG(state_size,action_size,0)
     agent_ppo=PPO(state_size,action_size)
 
-    ppo_score=train_PPO(agent_ppo,1000,["ppo_actor.pth","ppo_critic.pth"])
-    plot_single_scores(ppo_score, 'ppo.png')
+    # train_ddpg(agent_ddpg,10,'')
+    # train_PPO(agent_ppo, 10, [])
+
+    ppo_score=train_PPO(agent_ppo,2000,["ppo_actor.pth","ppo_critic.pth"])
+    plot_single_scores(ppo_score, 'ppo-2.png')
 

@@ -2,137 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c857265-4585-4d28-b6c4-603946da32c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unity-projects/Reacher/PPO/PPO_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity-projects/Reacher/PPO/agent_PPO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity-projects/Reacher/envTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity-projects/Reacher/unity-environment.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BipedalWalker/TD3/TD3_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/PPO_with_A.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/PPO_with_A.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/models/PPO_new.pth" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/models/PPO_new.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/plots/PPO_with_entropy.png" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/plots/PPO_with_entropy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CartPole/main_CartPole.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/main_CartPole.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MountCar_continuous/PPO/PPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar_continuous/PPO/PPO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MountCar_continuous/PPO/ppo_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar_continuous/PPO/ppo_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/agent_cem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/main_cem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/.idea/Unity-projects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/.idea/Unity-projects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/.idea/Pro2.1_Reacher.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/.idea/Pro2.1_Reacher.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/.ipynb_checkpoints/Continuous_Control-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/.ipynb_checkpoints/Continuous_Control-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/.ipynb_checkpoints/Reacher_v1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/.ipynb_checkpoints/Reacher_v1-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Continuous_Control.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Continuous_Control.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/Google.Protobuf.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/Google.Protobuf.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/Grpc.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/Grpc.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/Mono.Posix.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/Mono.Posix.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/Mono.Security.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/Mono.Security.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/System.Configuration.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/System.Configuration.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/System.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/System.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/System.Interactive.Async.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/System.Interactive.Async.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/System.Security.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/System.Security.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/System.Xml.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/System.Xml.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/System.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/System.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.AIModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.AIModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.ARModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.ARModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.AccessibilityModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.AccessibilityModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.AnimationModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.AnimationModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.AssetBundleModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.AssetBundleModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.AudioModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.AudioModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.ClothModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.ClothModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.ClusterInputModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.ClusterInputModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.ClusterRendererModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.ClusterRendererModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.CoreModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.CoreModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.CrashReportingModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.CrashReportingModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.DirectorModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.DirectorModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.GameCenterModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.GameCenterModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.GridModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.GridModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.IMGUIModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.IMGUIModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.ImageConversionModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.ImageConversionModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.InputModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.InputModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.JSONSerializeModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.JSONSerializeModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.Networking.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.Networking.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.ParticleSystemModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.ParticleSystemModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.ParticlesLegacyModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.ParticlesLegacyModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.PerformanceReportingModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.PerformanceReportingModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.Physics2DModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.Physics2DModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.PhysicsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.PhysicsModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.ScreenCaptureModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.ScreenCaptureModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.SharedInternalsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.SharedInternalsModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.SpatialTracking.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.SpatialTracking.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.SpriteMaskModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.SpriteMaskModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.SpriteShapeModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.SpriteShapeModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.StandardEvents.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.StandardEvents.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.StyleSheetsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.StyleSheetsModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.TerrainModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.TerrainModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.TextRenderingModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.TextRenderingModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.TilemapModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.TilemapModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.Timeline.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UIElementsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UIElementsModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UIModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UIModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UNETModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UNETModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UnityConnectModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UnityConnectModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UnityWebRequestModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UnityWebRequestModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.VRModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.VRModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.VehiclesModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.VehiclesModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.VideoModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.VideoModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.WebModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.WebModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.WindModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.WindModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/UnityEngine.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/mscorlib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Managed/mscorlib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/2.0/machine.config" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/2.0/machine.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/2.0/settings.map" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/2.0/settings.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/2.0/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/2.0/web.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.0/machine.config" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.0/machine.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.0/settings.map" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.0/settings.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.0/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.0/web.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.5/machine.config" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.5/machine.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.5/settings.map" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.5/settings.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.5/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.5/web.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/browscap.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/browscap.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/config" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/mconfig/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/mconfig/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Plugins/grpc_csharp_ext.x64.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Plugins/grpc_csharp_ext.x64.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Resources/unity default resources" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Resources/unity default resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/Resources/unity_builtin_extra" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/Resources/unity_builtin_extra" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/app.info" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/app.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/boot.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/globalgamemanagers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/globalgamemanagers.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/level0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/level0.resS" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/level0.resS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/resources.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/Reacher_Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/sharedassets0.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Reacher_Windows_x86_64/UnityPlayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/UnityPlayer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Report.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/agent_DDPG.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/checkpoint_actor.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/checkpoint_critic.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/model_DDPG.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/my_Reacher_v1.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/unity-environment.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.1_Reacher/workspace_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.2_Crawler/Crawler.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Crawler/Crawler.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro2.2_Crawler/Crawler_Windows_x86_64.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Crawler/Crawler_Windows_x86_64.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BipedalWalker/TD3/TD3_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/BipedalWalker/TD3/TD3_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BipedalWalker/TD3/TD3_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/BipedalWalker/TD3/TD3_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/DDPG/agent_DDPG.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/DDPG/agent_DDPG.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/DDPG/model_DDPG.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/DDPG/model_DDPG.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/PPO/PPO_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/PPO/PPO_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/PPO/agent_PPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/PPO/agent_PPO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/unity-environment.log" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/unity-environment.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +37,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Unity-projects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RL_exp示例代码&amp;参考项目" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
@@ -171,7 +50,7 @@
       <recent name="D:\RL_workspace\CartPole" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MCar_continuous_main">
+  <component name="RunManager" selected="Python.TD3_main">
     <configuration name="MCar_continuous_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RL_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -193,7 +72,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="envTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="TD3_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RL_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -201,11 +80,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pendulum" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BipedalWalker/TD3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pendulum/envTest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BipedalWalker/TD3/TD3_main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -279,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TD3_main" />
         <item itemvalue="Python.MCar_continuous_main" />
         <item itemvalue="Python.mcar_ddpg_main" />
         <item itemvalue="Python.main_CartPole" />
         <item itemvalue="Python.main_cem" />
-        <item itemvalue="Python.envTest" />
       </list>
     </recent_temporary>
   </component>
@@ -321,65 +200,55 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="511" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1584584286705" />
-    <state x="470" y="190" key="FileChooserDialogImpl" timestamp="1587539055818">
+    <state x="470" y="190" key="FileChooserDialogImpl" timestamp="1589872217776">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="470" y="190" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1580998399073" />
-    <state x="2508" y="240" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584263935091" />
-    <state x="470" y="190" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587539055818" />
-    <state width="413" height="696" key="GridCell.Tab.0.bottom" timestamp="1587608701846">
+    <state x="2508" y="240" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589088098667" />
+    <state x="470" y="190" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589872217776" />
+    <state width="304" height="696" key="GridCell.Tab.0.bottom" timestamp="1589938024030">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="484" height="696" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585990622645" />
     <state width="418" height="912" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585659879533" />
-    <state width="413" height="696" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587608701846" />
-    <state width="413" height="696" key="GridCell.Tab.0.center" timestamp="1587608701846">
+    <state width="304" height="696" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589938024030" />
+    <state width="304" height="696" key="GridCell.Tab.0.center" timestamp="1589938024030">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="484" height="696" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585990622645" />
     <state width="418" height="912" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585659879533" />
-    <state width="413" height="696" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587608701846" />
-    <state width="413" height="696" key="GridCell.Tab.0.left" timestamp="1587608701846">
+    <state width="304" height="696" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589938024030" />
+    <state width="304" height="696" key="GridCell.Tab.0.left" timestamp="1589938024030">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="484" height="696" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585990622645" />
     <state width="418" height="912" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585659879533" />
-    <state width="413" height="696" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587608701846" />
-    <state width="413" height="696" key="GridCell.Tab.0.right" timestamp="1587608701846">
+    <state width="304" height="696" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589938024030" />
+    <state width="304" height="696" key="GridCell.Tab.0.right" timestamp="1589938024030">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="484" height="696" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585990622645" />
     <state width="418" height="912" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585659879533" />
-    <state width="413" height="696" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587608701846" />
+    <state width="304" height="696" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589938024030" />
     <state width="567" height="246" key="GridCell.Tab.1.bottom" timestamp="1585291365866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="418" height="328" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580719113996" />
     <state width="567" height="246" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585291365866" />
     <state width="567" height="246" key="GridCell.Tab.1.center" timestamp="1585291365866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="418" height="328" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580719113996" />
     <state width="567" height="246" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585291365866" />
     <state width="567" height="246" key="GridCell.Tab.1.left" timestamp="1585291365866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="418" height="328" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580719113996" />
     <state width="567" height="246" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585291365866" />
     <state width="567" height="246" key="GridCell.Tab.1.right" timestamp="1585291365866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="418" height="328" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580719113996" />
     <state width="567" height="246" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585291365866" />
     <state x="95" y="110" key="SettingsEditor" timestamp="1585290923689">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2755" y="235" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580129916287" />
     <state x="95" y="110" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585290923689" />
-    <state x="454" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1579519576993">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="454" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1579519576993" />
     <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587539433492">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

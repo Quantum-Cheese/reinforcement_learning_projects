@@ -34,8 +34,11 @@ class PPO():
 
     def act(self,state):
         state = torch.from_numpy(state).float().unsqueeze(0).to(device)
+        self.policy.eval()
         with torch.no_grad():
             (mu, sigma) = self.policy(state)  # 2d tensors
+        self.policy.train()
+
         dist = Normal(mu, sigma)
         action = dist.sample()
         action_log_prob = dist.log_prob(action)
@@ -65,8 +68,8 @@ class PPO():
         entropy = -(new_probs * torch.log(old_probs + 1.e-10) + (1.0 - new_probs) * torch.log(1.0 - old_probs + 1.e-10))
         # final Loss
         # 加入 entropy 项
-        # policy_loss=torch.mean(clipped_surrogate+BETA*entropy)
-        policy_loss=torch.mean(clipped_surrogate)
+        policy_loss=torch.mean(clipped_surrogate+BETA*entropy)
+        # policy_loss=torch.mean(clipped_surrogate)
 
         # update parameters
         self.policy_optimizer.zero_grad()

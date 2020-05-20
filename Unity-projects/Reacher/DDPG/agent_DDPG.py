@@ -75,6 +75,7 @@ class DDPG:
 
         """
         # 把从外部环境获得的经验元组存入 memory
+
         self.memory.add(state,action,next_state,reward,done)
 
         # 如果 memory 中有足够多的经验，调用 learn() 方法更新 actor和critic的参数
@@ -116,6 +117,7 @@ class DDPG:
         # ------------- 更新 local Actor (batch update) -------------- ##
 
         # ---- 根据 s(t) 从 local actor 得到预估的 a(t) * 非实际动作
+        print("states DDPG shape",states.shape)
         actions_pred=self.actor_local(states)
 
         # - 计算 actor 的损失函数（ 取目标函数的 negative mean ）
