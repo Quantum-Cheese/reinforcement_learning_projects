@@ -117,7 +117,7 @@ class TD3(object):
                 critic_loss (float): loss from critic network
 
         """
-        # 遍历 replay buffer 中存储的经验，即一个 episode 的所有 time step (并不是当前的 episode，这里是随机取样)
+        # 从 replay buffer 中批量随机采样，重复 N 次训练
         for it in range(iterations):
             # Sample replay buffer
             s, a, s1, r, d = self.memory.sample(batch_size)
@@ -177,7 +177,7 @@ class TD3(object):
                 for param, target_param in zip(self.actor.parameters(), self.actor_target.parameters()):
                     target_param.data.copy_(tau * param.data + (1 - tau) * target_param.data)
 
-    def save(self, filename, directory):
+    def save(self, directory,filename):
         torch.save(self.actor.state_dict(), '%s/%s_actor.pth' % (directory, filename))
         torch.save(self.critic.state_dict(), '%s/%s_critic.pth' % (directory, filename))
 
