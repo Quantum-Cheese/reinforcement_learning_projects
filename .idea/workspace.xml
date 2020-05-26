@@ -1,10 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c857265-4585-4d28-b6c4-603946da32c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Atari/envTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a0030566-cb5d-49dd-9f42-e1ce700b786a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/RL_workspace.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/QuantumCheese.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Acrobot/envTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Acrobot/envTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Acrobot/tile_coding.py" beforeDir="false" afterPath="$PROJECT_DIR$/Acrobot/tile_coding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Acrobot/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/Acrobot/visualize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atari/envTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Atari/envTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BipedalWalker/DDPG/DDPG_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/BipedalWalker/DDPG/DDPG_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BipedalWalker/DDPG/DDPG_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/BipedalWalker/DDPG/DDPG_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BipedalWalker/DDPG/DDPG_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/BipedalWalker/DDPG/DDPG_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BipedalWalker/DDPG/ddpg_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/BipedalWalker/DDPG/ddpg_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BipedalWalker/PPO/PPO_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/BipedalWalker/PPO/PPO_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BipedalWalker/PPO/PPO_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/BipedalWalker/PPO/PPO_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BipedalWalker/PPO/PPO_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/BipedalWalker/PPO/PPO_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BipedalWalker/TD3/TD3_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/BipedalWalker/TD3/TD3_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BipedalWalker/TD3/TD3_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/BipedalWalker/TD3/TD3_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BipedalWalker/TD3/TD3_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/BipedalWalker/TD3/TD3_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BipedalWalker/envTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/BipedalWalker/envTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BipedalWalker/main_bipedal.py" beforeDir="false" afterPath="$PROJECT_DIR$/BipedalWalker/main_bipedal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartPole/Hill_Climbing/agent_HC.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/Hill_Climbing/agent_HC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartPole/Hill_Climbing/main_hillClimb.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/Hill_Climbing/main_hillClimb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/PPO_with_A.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/PPO_with_A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/PPO_with_R.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/PPO_with_R.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/agent_PG.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/agent_PG.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartPole/Policy_Gradient/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/Policy_Gradient/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartPole/envTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/envTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartPole/main_CartPole.py" beforeDir="false" afterPath="$PROJECT_DIR$/CartPole/main_CartPole.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LunarLander/DQN/ddqn_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/LunarLander/DQN/ddqn_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LunarLander/DQN/ddqn_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/LunarLander/DQN/ddqn_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LunarLander/DQN/ddqn_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/LunarLander/DQN/ddqn_v3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LunarLander/DQN/dqn.py" beforeDir="false" afterPath="$PROJECT_DIR$/LunarLander/DQN/dqn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LunarLander/DQN/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/LunarLander/DQN/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LunarLander/DQN/model_dueling.py" beforeDir="false" afterPath="$PROJECT_DIR$/LunarLander/DQN/model_dueling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LunarLander/DQN/play_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/LunarLander/DQN/play_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LunarLander/DQN/ref_ddqn_iws.py" beforeDir="false" afterPath="$PROJECT_DIR$/LunarLander/DQN/ref_ddqn_iws.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LunarLander/DQN/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/LunarLander/DQN/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar/DQN/dqn_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar/DQN/dqn_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar/DQN/dqn_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar/DQN/dqn_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar/DQN/dqn_until.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar/DQN/dqn_until.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar/discretization/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar/discretization/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar/discretization/agent_ql.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar/discretization/agent_ql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar/discretization/carMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar/discretization/carMain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar/discretization/carRun.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar/discretization/carRun.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar/discretization/discretization.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar/discretization/discretization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar/discretization/envTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar/discretization/envTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar/discretization/visual.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar/discretization/visual.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar_continuous/DDPG/agent_ddpg.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar_continuous/DDPG/agent_ddpg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar_continuous/DDPG/mcar_ddpg_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar_continuous/DDPG/mcar_ddpg_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar_continuous/PPO/MCar_continuous_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar_continuous/PPO/MCar_continuous_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar_continuous/PPO/PPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar_continuous/PPO/PPO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/agent_cem.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/agent_cem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/main_cem.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar_continuous/cross_entropy_method/main_cem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MountCar_continuous/env_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/MountCar_continuous/env_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pendulum/envTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pendulum/envTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_BlackJack/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pro_BlackJack/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_BlackJack/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pro_BlackJack/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/.idea/Unity-projects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/.idea/Unity-projects.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro1.Navigation/Banana_Windows_x86_64/Banana_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro1.Navigation/Banana_Windows_x86_64/Banana_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro1.Navigation/Banana_Windows_x86_64/Banana_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro1.Navigation/Banana_Windows_x86_64/Banana_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro1.Navigation/Banana_Windows_x86_64/Banana_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro1.Navigation/Banana_Windows_x86_64/Banana_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro1.Navigation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro1.Navigation/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro1.Navigation/unity-environment.log" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro1.Navigation/unity-environment.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/.idea/Pro3.1_Tennis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/.idea/Pro3.1_Tennis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/.ipynb_checkpoints/my_tennis-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/.ipynb_checkpoints/tennis_old-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/Tennis_Windows_x86_64/Tennis_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/Tennis_Windows_x86_64/Tennis_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/Tennis_Windows_x86_64/Tennis_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/Tennis_Windows_x86_64/Tennis_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/Tennis_Windows_x86_64/Tennis_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/Tennis_Windows_x86_64/Tennis_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/ddpg_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/ddpg_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/ddpg_untils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/ddpg_untils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/tennis_env_play.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/tennis_env_play.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/tennis_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/tennis_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/unity-environment.log" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Pro3.1_Tennis/unity-environment.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/.idea/Pro2.1_Reacher.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/.idea/Pro2.1_Reacher.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/.ipynb_checkpoints/Continuous_Control-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/.ipynb_checkpoints/Reacher_v1-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/PPO/PPO_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/PPO/PPO_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/PPO/agent_PPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/PPO/agent_PPO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_Windows_x86_64/Reacher_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/Reacher_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/envTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/envTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity-projects/Reacher/unity-environment.log" beforeDir="false" afterPath="$PROJECT_DIR$/Unity-projects/Reacher/unity-environment.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qlearning_maze/.idea/Pro.5_qlearning_maze.iml" beforeDir="false" afterPath="$PROJECT_DIR$/qlearning_maze/.idea/Pro.5_qlearning_maze.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qlearning_maze/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/qlearning_maze/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qlearning_maze/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/qlearning_maze/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qlearning_maze/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/qlearning_maze/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qlearning_maze/.ipynb_checkpoints/robot_maze-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ttest.py" beforeDir="false" afterPath="$PROJECT_DIR$/ttest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,29 +123,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1Weokquy0IiAjeBUYaBQLafPrk8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1Zx8Oeeq1dinNNI5LiXqj43BoBk" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RL_exp示例代码&amp;参考项目" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MountCar_continuous/TD3" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\RL_workspace\CartPole\Policy_Gradient\plots" />
-      <recent name="D:\RL_workspace\CartPole\Policy_Gradient" />
-      <recent name="D:\RL_workspace\MountCar_continuous\PPO" />
-      <recent name="D:\RL_workspace\MountCar_continuous" />
-      <recent name="D:\RL_workspace\CartPole" />
+      <recent name="$PROJECT_DIR$/MountCar_continuous" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MountCar_continuous/TD3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.envTest">
+  <component name="RunManager" selected="Python.TD3_main">
     <configuration name="MCar_continuous_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RL_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -57,6 +155,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MountCar_continuous/PPO/MCar_continuous_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PPO_with_A" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RL_workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CartPole/Policy_Gradient" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CartPole/Policy_Gradient/PPO_with_A.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,11 +213,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Atari" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CartPole" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Atari/envTest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CartPole/envTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,127 +247,62 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mcar_ddpg_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RL_workspace" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MountCar_continuous/DDPG" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MountCar_continuous/DDPG/mcar_ddpg_main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.envTest" />
         <item itemvalue="Python.TD3_main" />
         <item itemvalue="Python.MCar_continuous_main" />
-        <item itemvalue="Python.mcar_ddpg_main" />
         <item itemvalue="Python.main_CartPole" />
+        <item itemvalue="Python.PPO_with_A" />
+        <item itemvalue="Python.envTest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0c857265-4585-4d28-b6c4-603946da32c2" name="Default Changelist" comment="" />
-      <created>1571360322685</created>
+      <changelist id="a0030566-cb5d-49dd-9f42-e1ce700b786a" name="Default Changelist" comment="" />
+      <created>1585769353148</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571360322685</updated>
+      <updated>1585769353148</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="489" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584496387334">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="743" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1587566854629">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="489" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1584496387334" />
-    <state x="511" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1584584286705">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="743" y="310" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1587566854629" />
+    <state width="528" height="902" key="GridCell.Tab.0.bottom" timestamp="1585748499106">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="511" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1584584286705" />
-    <state x="470" y="190" key="FileChooserDialogImpl" timestamp="1590389872373">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="528" height="902" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1585748499106" />
+    <state width="562" height="902" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585745780650" />
+    <state width="528" height="902" key="GridCell.Tab.0.center" timestamp="1585748499105">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="2508" y="240" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589088098667" />
-    <state x="470" y="190" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590389872373" />
-    <state width="387" height="696" key="GridCell.Tab.0.bottom" timestamp="1590373632376">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="528" height="902" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1585748499105" />
+    <state width="562" height="902" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585745780650" />
+    <state width="528" height="902" key="GridCell.Tab.0.left" timestamp="1585748499105">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="484" height="696" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585990622645" />
-    <state width="418" height="912" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585659879533" />
-    <state width="387" height="696" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590373632376" />
-    <state width="387" height="696" key="GridCell.Tab.0.center" timestamp="1590373632376">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="528" height="902" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1585748499105" />
+    <state width="562" height="902" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585745780649" />
+    <state width="528" height="902" key="GridCell.Tab.0.right" timestamp="1585748499106">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="484" height="696" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585990622645" />
-    <state width="418" height="912" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585659879533" />
-    <state width="387" height="696" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590373632376" />
-    <state width="387" height="696" key="GridCell.Tab.0.left" timestamp="1590373632376">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="528" height="902" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1585748499106" />
+    <state width="562" height="902" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585745780650" />
+    <state x="430" y="187" key="SettingsEditor" timestamp="1590063399601">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="484" height="696" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585990622645" />
-    <state width="418" height="912" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585659879533" />
-    <state width="387" height="696" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590373632376" />
-    <state width="387" height="696" key="GridCell.Tab.0.right" timestamp="1590373632376">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="430" y="187" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1590063399601" />
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1585769600479" />
+    <state x="616" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1585746409138">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="484" height="696" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585990622645" />
-    <state width="418" height="912" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585659879533" />
-    <state width="387" height="696" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590373632376" />
-    <state width="567" height="246" key="GridCell.Tab.1.bottom" timestamp="1585291365866">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="567" height="246" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585291365866" />
-    <state width="567" height="246" key="GridCell.Tab.1.center" timestamp="1585291365866">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="567" height="246" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585291365866" />
-    <state width="567" height="246" key="GridCell.Tab.1.left" timestamp="1585291365866">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="567" height="246" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585291365866" />
-    <state width="567" height="246" key="GridCell.Tab.1.right" timestamp="1585291365866">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="567" height="246" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585291365866" />
-    <state x="95" y="110" key="SettingsEditor" timestamp="1585290923689">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="95" y="110" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585290923689" />
-    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587539433492">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1587539433492" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585710071169">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585710071169" />
+    <state x="616" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1585746409138" />
   </component>
 </project>
