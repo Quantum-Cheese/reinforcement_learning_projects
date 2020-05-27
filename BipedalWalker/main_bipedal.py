@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import gym
 import torch
 from BipedalWalker.DDPG.DDPG_agent import DDPGAgent
-from BipedalWalker.TD3.DQN_agent import DQNAgent
+
 
 eps_start=1.0
 eps_end=0.01

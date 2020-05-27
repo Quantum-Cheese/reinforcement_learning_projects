@@ -1,3 +1,5 @@
+"""agent 更新频率：每个episode跑完后再整体更新（按 time step 更新）"""
+
 from collections import deque
 import numpy as np
 import matplotlib.pyplot as plt
@@ -60,6 +62,19 @@ def train_td3(env,agent,n_episodes):
     return scores
 
 
+def watch_agent(agent,filename_actor,filename_crtic):
+    agent.actor.load_state_dict(torch.load(filename_actor))
+    agent.critic.load_state_dict(torch.load(filename_crtic))
+    state = env.reset()
+    for t in range(3000):
+        action = agent.select_action(state)
+        env.render()
+        state, reward, done, _ = env.step(action)
+        if done:
+            break
+    env.close()
+
+
 def plot_scores(scores):
     fig = plt.figure()
     ax = fig.add_subplot(111)
@@ -71,13 +86,16 @@ def plot_scores(scores):
 
 
 if __name__=="__main__":
-    env = gym.make('BipedalWalker-v2')
+    env = gym.make('BipedalWalker-v3')
     env.seed(10)
     state_dim = env.observation_space.shape[0]
     action_dim = env.action_space.shape[0]
     max_action = float(env.action_space.high[0])
 
     agent=TD3(state_dim,action_dim,max_action,env)
-    # 训练并保存 scores
-    scores=train_td3(env,agent,2000)
-    plot_scores(scores)
+    # # 训练并保存 scores
+    # scores=train_td3(env,agent,2000)
+    # plot_scores(scores)
+
+    # watch the trained agent
+    watch_agent(agent,'models/TD3_actor.pth','models/TD3_critic.pth')
