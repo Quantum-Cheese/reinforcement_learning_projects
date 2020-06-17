@@ -1,73 +1,39 @@
-"""agent 更新频率：每个episode跑完后再整体更新（按 time step 更新）"""
-
 from collections import deque
 import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
 import gym
-import arrow
 import torch
-from BipedalWalker.TD3.TD3_agent import TD3
+import arrow
+import os
+from BipedalWalker.TD3.TD3_new import TD3
 
-BUFFER_SIZE = int(1e6)  # replay buffer size
-BATCH_SIZE = 100       # minibatch size
-GAMMA = 0.99            # discount factor
-TAU = 0.005              # for soft update of target parameters
-NOISE=0.2
-CLIP=0.5
-POLICY_FREQ=2
+RESUME= True
+SAVE_MODEL_EVERY = 5
+load_checkpoint_patch=["models/checkpoint/actor_10.pth","models/checkpoint/critic_10.pth"]
 
 
-def train_td3(env,agent,n_episodes):
-    scores_deque = deque(maxlen=100)
-    scores = []
-    start_time = arrow.now()
-    begin_time=arrow.now()
-    for i_episode in range(1, n_episodes+1):
-        state = env.reset()
-        total_reward = 0
-        time_step=0
+def output_scores(start_time,i_episode,scores_deque,score):
+    print('\rEpisode {}\tAverage Score: {:.2f}\tScore: {:.2f}'
+          .format(i_episode, np.mean(scores_deque), score), end="")
+    if i_episode % 100 == 0:
+        print('\rEpisode {}\tAverage Score: {:.2f}\t Running time til now :{}'
+              .format(i_episode, np.mean(scores_deque),arrow.now()-start_time))
+    if np.mean(scores_deque) >= 300:
+        print('\nEnvironment solved in {:d} iterations!\tAverage Score: {:.2f}\t Total running time :{}'
+                .format(i_episode, np.mean(scores_deque),arrow.now()-start_time))
+        return True
 
-        # loop over time steps
-        while True:
-            # 智能体选择动作（根据当前策略）
-            action = agent.select_action(state)
-            next_state, reward, done, _ = env.step(action)
-            # 存储经验
-            agent.memory.add((state, action, next_state,reward, done))
-            time_step+=1
-            state = next_state
-            total_reward += reward
-            if done:
-                break
-
-        # recording scores
-        scores.append(total_reward)
-        scores_deque.append(total_reward)
-        print('\rEpisode {}\tAverage Score: {:.2f}\tScore: {:.2f}'
-              .format(i_episode, np.mean(scores_deque), total_reward),end="")
-        if i_episode % 100 == 0:
-            print('\rEpisode {}\tAverage Score: {:.2f}\t Running time for 100 episode:{}'
-                  .format(i_episode, np.mean(scores_deque),arrow.now()-start_time))
-        if np.mean(scores_deque)>=300:
-            print('\n Environment solved in {:d} episodes!\tAverage Score: {:.2f}\t Total running time"{}'
-                  .format(i_episode,np.mean(scores_deque),arrow.now()-begin_time))
-            agent.save('models','TD3')
-            break
-            return scores
-
-        # train the agent after finishing current episode
-        agent.train(iterations=time_step, batch_size=BATCH_SIZE, discount=GAMMA, tau=TAU, policy_noise=NOISE,
-                    noise_clip=CLIP,policy_freq=POLICY_FREQ)
-
-    return scores
+    return False
 
 
 def watch_agent(agent,filename_actor,filename_crtic):
-    agent.actor.load_state_dict(torch.load(filename_actor))
-    agent.critic.load_state_dict(torch.load(filename_crtic))
+    agent.actor_local.load_state_dict(torch.load(filename_actor))
+    agent.critic_local.load_state_dict(torch.load(filename_crtic))
     state = env.reset()
-    for t in range(3000):
-        action = agent.select_action(state)
+    for t in range(1000):
+        action = agent.act(state, noise=False)
+        print(action)
         env.render()
         state, reward, done, _ = env.step(action)
         if done:
@@ -75,28 +41,105 @@ def watch_agent(agent,filename_actor,filename_crtic):
     env.close()
 
 
-def plot_scores(scores):
+def plot_scores(scores,filename):
     fig = plt.figure()
     ax = fig.add_subplot(111)
-    plt.plot(np.arange(1, len(scores.size()) + 1), scores)
+    plt.plot(np.arange(1, len(scores) + 1), scores)
     plt.ylabel('Score')
     plt.xlabel('Episode #')
-    plt.savefig('TD3_1.png')
+    plt.savefig(filename)
     plt.show()
 
 
+def save_check_point(agent,i_episode):
+    # setting the check point for training
+    checkpoint_actor = {
+        "net": agent.actor.state_dict(),
+        'optimizer': agent.actor_optimizer.state_dict(),
+        "epoch": i_episode
+    }
+    checkpoint_critic = {
+        "net": agent.critic.state_dict(),
+        "optimizer": agent.critic_optimizer.state_dict(),
+        "epoch": i_episode
+    }
+    if not os.path.isdir("models/checkpoint"):
+        os.mkdir("models/checkpoint")
+    torch.save(checkpoint_actor, 'models/checkpoint/actor_%s.pth' % (str(i_episode)))
+    torch.save(checkpoint_critic, 'models/checkpoint/critic_%s.pth' % (str(i_episode)))
+
+
+def load_check_point(agent):
+    "load saved checkpoints to resume training"
+    checkpoint_actor = torch.load(load_checkpoint_patch[0])  # 加载断点
+    checkpoint_critic = torch.load(load_checkpoint_patch[1])
+
+    agent.actor.load_state_dict(checkpoint_actor['net'])  # 加载模型可学习参数
+    agent.critic.load_state_dict(checkpoint_critic['net'])
+
+    agent.actor_optimizer.load_state_dict(checkpoint_actor['optimizer'])  # 加载优化器参数
+    agent.critic_optimizer.load_state_dict(checkpoint_critic['optimizer'])  # 加载优化器参数
+
+    start_epoch = checkpoint_actor['epoch']  # 设置开始的epoch
+    return start_epoch
+
+
+def train_td3(env,agent,n_episodes):
+    start_epoch = 1
+
+    if RESUME:    # 加载 check point 中保存的模型参数继续训练
+        start_epoch=load_check_point(agent)
+
+    scores_deque = deque(maxlen=100)
+    scores = []
+    start_time = arrow.now()
+    for i_episode in range(start_epoch, n_episodes + 1):
+        state = env.reset()
+        total_reward = 0
+        time_step = 0
+
+        # loop over time steps
+        while True:
+            # 智能体选择动作（根据当前策略）
+            action = agent.select_action(state)
+            next_state, reward, done, _ = env.step(action)
+            agent.save_exp(state, action, next_state, reward, done)
+            if agent.mode==1:
+                agent.train(time_step)
+            time_step += 1
+            state = next_state
+            total_reward += reward
+            if done:
+                break
+
+        # recording scores
+        scores.append([i_episode,total_reward])
+        scores_deque.append(total_reward)
+        finished = output_scores(start_time, i_episode, scores_deque, total_reward)
+        if finished:
+            agent.save('models', 'TD3_v2')
+            break
+
+        if i_episode% SAVE_MODEL_EVERY ==0:
+            save_check_point(agent, i_episode)
+            # 同时保存 scores，存为 scv 文件
+            scores_df=pd.DataFrame(data=scores,columns=['episode','score'])
+            scores_df.to_csv('scores_saved.csv',index=False)
+
+        if agent.mode==0:
+            agent.train(time_step)
+
+    return scores
+
+
 if __name__=="__main__":
-    # env = gym.make('BipedalWalker-v3')
-    env = gym.make('BipedalWalkerHardcore-v3')
+    env = gym.make('BipedalWalker-v3')
     env.seed(10)
     state_dim = env.observation_space.shape[0]
     action_dim = env.action_space.shape[0]
     max_action = float(env.action_space.high[0])
 
-    agent=TD3(state_dim,action_dim,max_action,env)
-    # # 训练并保存 scores
-    # scores=train_td3(env,agent,2000)
-    # plot_scores(scores)
+    agent_0 = TD3(state_dim,action_dim,max_action,env,0)      # mode=0:update per episode
+    agent_1 = TD3(state_dim, action_dim, max_action, env, 1)  # mode=1: update per time step
 
-    # watch the trained agent
-    watch_agent(agent,'models/TD3_actor.pth','models/TD3_critic.pth')
+    scores=train_td3(env,agent_1,1000)

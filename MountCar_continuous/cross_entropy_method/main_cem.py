@@ -52,6 +52,7 @@ def cem(agent,n_iterations=500, max_t=1000, gamma=1.0, print_every=10, pop_size=
     return scores
 
 
+
 def watch_trained_agent(agent):
     # load the weights from file
     agent.load_state_dict(torch.load('checkpoint.pth'))
